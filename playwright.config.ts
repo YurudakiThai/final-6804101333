@@ -12,7 +12,7 @@ export default defineConfig({
   reporter: [
     ["list"], // แสดงผลใน Terminal
     ["html", { open: "never", outputFolder: "playwright-report" }], // HTML Report
-    ["json", { outputFile: "test-results/results.json" }], // JSON Report
+    ["json", { outputFile: "reports/results.json" }], // JSON Report
   ],
   projects: [{ name: "chromium", use: { ...devices["Desktop Chrome"] } }],
 });

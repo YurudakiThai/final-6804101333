@@ -65,7 +65,7 @@ test.describe("UT-01: Login Form Validation", () => {
       });
       await test.step("ตรวจสอบ Error และ URL", async () => {
         await expect(page.locator('[data-test="error"]')).toContainText(
-          "Username and Password do not match",
+          "Username and password do not match any user in this service",
         );
         await expect(page).toHaveURL(/.*saucedemo.com/);
       });
